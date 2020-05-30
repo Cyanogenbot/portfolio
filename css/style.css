@@ -1,0 +1,455 @@
+
+* {
+  border: 1px dashed red
+}
+body{
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-size: large;
+    line-height: 1.25;
+    padding:0;
+    margin:0;
+    background-color: #e9defa;
+}
+
+
+
+
+/*most stuff*/
+.container{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+}
+
+.button_1{
+    height: 28px;
+    background: linear-gradient(+20deg, #e9defa 0%, #fbfcdb 100%);
+    border: 0;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius: 12px;
+    font-family: quicksand;
+}
+
+ul{
+    margin: 0;
+    padding:0;
+}
+
+
+header{
+    position: sticky;
+	top:0;
+    background-color: #ffffff;
+    color:#000000;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #35424a 3px solid;
+   
+    padding: 20px;
+    display: flex;
+    align-items: baseline;
+    opacity:0.95;
+}
+
+.sticky{
+    position:sticky;
+    top:0;
+    width:100%;
+}
+
+header a{
+    color:#000000;
+    text-decoration: none;
+    
+    font-size: 20px;
+
+}
+
+
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+}
+
+header #logo{
+    float:left;
+
+}
+
+header #logo h1{
+ margin:0;   
+}
+
+header nav{
+    float :right;
+    margin-top: 5px;
+}
+
+header .highlight, header .current a{
+    
+    background: linear-gradient(to left, #37ecba 0%, #72afd3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+#showcase{
+    min-height: 750px;
+    background:  url('../img/Asset\ 2clout.svg') no-repeat 100% 101%,url('../img/IMG_20191223_155637\ \(1\).jpg')no-repeat 0 -200px ;
+    background-attachment: scroll, fixed;
+    background-position: bottom right,-100px;
+    background-size: auto, cover;
+    text-align: center;
+    
+   
+}
+
+
+
+
+#showcase h1{
+    margin-top: 11%;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#Identity .overlay{
+  
+}
+#Identity{
+   background: url('../img/Asset\ 9clout3.svg') no-repeat 0% 0%, url('../img/IMG_20200202_134550.jpg') no-repeat 0 30%;
+   background-attachment: scroll, scroll;
+   background-size: auto,cover;
+   
+   
+   padding:15px;
+   min-height: 750px;
+   background-color: #ffffff;
+   color: #ffffff;
+
+}
+
+#Identity h1{
+    float:right;
+    font-size:30px;
+    margin-top: 25px;
+    font-size: 55px;
+}
+
+#Identity form{
+    margin-top: 0px;
+    float:left;
+    margin-left:35px;
+
+}
+
+#Identity img{
+  float: right;
+
+  max-height: 250px;
+  margin-top: 100px;
+  
+}
+#Identity p{
+  backdrop-filter: blur(4px);
+  backdrop-filter: brightness(70%);
+    float:left;
+    max-width: 60%;
+    max-height: 250px;
+    margin-top: 100px;
+    color: #ffffff;
+    font-size: auto;
+    
+   
+    
+}
+
+
+
+#Identity input[type="name"]{
+    
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+    border-radius: 12px;
+    font-family: quicksand;
+    background: linear-gradient(+20deg, #e9defa 0%, #fbfcdb 50%);
+}
+
+#boxes{
+    max-height: 200px;
+    margin-top:20px;
+}
+
+#boxes .box{
+    float:left; 
+    width:33%;
+    padding:15;
+    text-align: center;
+}
+
+#Vision{
+    margin-top: 20px;
+    padding: 15px;
+}
+
+#Identity2{
+    margin-top: 20px;
+    padding: 15px;
+}
+
+#Skills{
+    margin-top: 20px;
+    padding: 15px;
+}
+
+
+footer{
+      padding:20px;
+      margin-top: 20px;
+      background: linear-gradient(+20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hamburger */
+/* Screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+  
+  /* Button styling */
+  .menu-toggle {
+    display: inline-block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    text-decoration: none;
+    color: #cccccc;
+  }
+  
+  /*
+   Default styles + Mobile first
+   Offscreen menu style
+  */
+  .main-menu {
+    position: absolute;
+    display: none;
+    left: -200px;
+    top: 0;
+    height: 100%;
+      overflow-y: hidden;
+      overflow-x: visible;
+      transition: left 0.3s ease,
+                        box-shadow 0.3s ease;
+      z-index: 999;
+  }
+  
+  .main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 2.5em 0 0;
+    /* Hide shadow w/ -8px while 'closed' */
+    -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+       -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+            box-shadow: -8px 0 8px rgba(0,0,0,.5);
+    min-height: 100%;
+    width: 200px;
+    background: #1a1a1a;
+  }
+  
+  .main-menu a {
+    display: block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #383838;
+  }
+  
+  .main-menu li:first-child a {
+    border-top: 1px solid #383838;
+  }
+  
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: #333;
+    text-decoration: underline;
+  }
+  
+  .main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /*
+   On small devices, allow it to toggle...
+  */
+  /*
+   :target for non-JavaScript
+   [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
+  */
+  .main-menu:target,
+  .main-menu[aria-expanded="true"] {
+    display: block;
+    left: 0;
+    outline: none;
+    -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+    -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+    box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  }
+  
+  .main-menu:target .menu-close,
+  .main-menu[aria-expanded="true"] .menu-close {
+    z-index: 1001;
+  }
+  
+  .main-menu:target ul,
+  .main-menu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  /* 
+   We could us `.main-menu:target:after`, but
+   it wouldn't be clickable.
+  */
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop{
+    position: absolute;
+    display: block;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #000;
+    background: rgba(0,0,0,.85);
+    cursor: default;
+  }
+  
+  @supports (position: fixed) {
+    .main-menu,
+    .main-menu:target + .backdrop,
+    .main-menu[aria-expanded="true"] + .backdrop{
+      position: fixed;
+    }
+  }
+  
+  /*
+   Larger screen styling
+   Horizontal menu
+  */
+  @media (min-width: 768px) {
+    .menu-toggle,
+    .main-menu .menu-close {
+      display: none;
+    }
+    
+    /* Undo positioning of off-canvas menu */
+    .main-menu {
+      position: relative;
+          left: auto;
+          top: auto;
+          height: auto;
+      display: block;
+    }
+    
+    .main-menu ul {
+      display: flex;
+      
+      /* Undo off-canvas styling */
+      padding: 0;
+      -webkit-box-shadow: none;
+         -moz-box-shadow: none;
+              box-shadow: none;
+      height: auto;
+      width: auto;
+      background: none;
+    }
+    
+    .main-menu a {
+      color: #000000;
+      border: 0 !important; /* Remove borders from off-canvas styling */
+    }
+    
+    .main-menu a:hover,
+    .main-menu a:focus {
+        text-decoration: none;
+        background: none; /* Remove background from off-canvas styling */
+        color: #cccccc;
+    }
+  }
+  
+  /*
+   Demo purposes only
+  */
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  header {
+    padding: 20px;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  article {
+    padding: 30px;
+    width: 55em;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  
+  article h2 {
+    font-weight: 500;
+    font-size: 28px;
+  }
+  
+  .logo {
+    margin: 0 30px 0 10px;
+    font-size: 1.5em;
+  }
+
