@@ -1,7 +1,7 @@
-
 * {
   border: 1px dashed red
 }
+
 body{
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     font-size: large;
@@ -21,6 +21,10 @@ body{
     overflow:hidden;
 }
 
+
+
+
+
 .button_1{
     height: 28px;
     background: linear-gradient(+20deg, #e9defa 0%, #fbfcdb 100%);
@@ -39,7 +43,7 @@ ul{
 
 header{
     position: sticky;
-	top:0;
+	  top:0;
     background-color: #ffffff;
     color:#000000;
     padding-top: 30px;
@@ -98,28 +102,29 @@ header .highlight, header .current a{
 
 
 #showcase{
-    min-height: 750px;
-    background:  url('../img/Asset\ 2clout.svg') no-repeat 100% 101%,url('../img/IMG_20191223_155637\ \(1\).jpg')no-repeat 0 -200px ;
+    min-height: 900px;
+    background:  url('../img/Asset\ 2clout.svg') no-repeat 100% 101%,url('../img/IMG_20191223_155637\ \(1\).jpg') no-repeat 0 -200px;
     background-attachment: scroll, fixed;
-    background-position: bottom right,-100px;
+    background-position: bottom right,0 0;
     background-size: auto, cover;
     text-align: center;
     
    
 }
 
-
-
-
 #showcase h1{
-    margin-top: 11%;
-    font-size: 55px;
-    margin-bottom: 10px;
+  margin-top: 11%;
+  font-size: 55px;
+  margin-bottom: 10px;
 }
 
-#Identity .overlay{
-  
+#Identity h1{
+  float:right;
+  font-size:3px;
+  margin-top: 35px;
+  font-size: 55px;
 }
+
 #Identity{
    background: url('../img/Asset\ 9clout3.svg') no-repeat 0% 0%, url('../img/IMG_20200202_134550.jpg') no-repeat 0 30%;
    background-attachment: scroll, scroll;
@@ -133,12 +138,7 @@ header .highlight, header .current a{
 
 }
 
-#Identity h1{
-    float:right;
-    font-size:30px;
-    margin-top: 25px;
-    font-size: 55px;
-}
+
 
 #Identity form{
     margin-top: 0px;
@@ -180,31 +180,86 @@ header .highlight, header .current a{
     background: linear-gradient(+20deg, #e9defa 0%, #fbfcdb 50%);
 }
 
+
+
 #boxes{
-    max-height: 200px;
-    margin-top:20px;
+  min-height: 400px;
+  margin:0px;
+  text-align: center;
+  padding:0px;
+  background: linear-gradient(+90deg, #e9defa 0%, #fbfcdb 100%);
 }
 
-#boxes .box{
-    float:left; 
-    width:33%;
-    padding:15;
-    text-align: center;
+.project1{
+  background: url('../img/pics2-4143227.jpg') no-repeat 0 0;
+  background-size: cover;
+  color: #fff;
+  backdrop-filter: brightness(70%);
+  flex:1
+}
+.project2{
+  background-image: url(../img/P7180525.JPG);
+  
+  flex:1;
 }
 
-#Vision{
+.project3{
+  background-image: url(../img/P7180525.JPG);
+  flex:1
+}
+
+
+#boxes .container{
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  padding:0px;
+  width:100%;
+  height: 400px;
+  
+  
+}
+
+@media screen and (max-width: 800px) {
+  #boxes .container{
+    display: flex;
+    flex-direction: column;
+    padding:0px;
+    width:100%;
+    height: auto;
+  }
+}
+
+
+
+#Vision p{
     margin-top: 20px;
     padding: 15px;
 }
 
-#Identity2{
+#Identity2 p{
     margin-top: 20px;
     padding: 15px;
 }
 
-#Skills{
+#Skills p{
     margin-top: 20px;
     padding: 15px;
+}
+#Past p{
+    margin-top: 20px;
+    padding: 15px;
+
+}
+#Future p{
+  margin-top: 20px;
+  padding: 15px;
+
+}
+#Present p{
+  margin-top: 20px;
+  padding: 15px;
+
 }
 
 
