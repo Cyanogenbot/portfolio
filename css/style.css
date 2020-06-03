@@ -3,7 +3,7 @@
 }
 
 body{
-    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-family: Quicksand, sans-serif;
     font-size: large;
     line-height: 1.25;
     padding:0;
@@ -40,6 +40,21 @@ ul{
     padding:0;
 }
 
+h1{
+  font-size:40px;
+  margin:15px;
+  padding:15px;
+}
+
+p{
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 1.25;
+    padding:0;
+    margin:0;
+    font-weight: 400 ;
+}
+
 
 header{
     position: sticky;
@@ -53,7 +68,7 @@ header{
     padding: 20px;
     display: flex;
     align-items: baseline;
-    opacity:0.95;
+    opacity:1;
 }
 
 .sticky{
@@ -84,7 +99,7 @@ header #logo{
 }
 
 header #logo h1{
- margin:0;   
+ margin:0; 
 }
 
 header nav{
@@ -102,8 +117,8 @@ header .highlight, header .current a{
 
 
 #showcase{
-    min-height: 900px;
-    background:  url('../img/Asset\ 2clout.svg') no-repeat 100% 101%,url('../img/IMG_20191223_155637\ \(1\).jpg') no-repeat 0 -200px;
+    min-height: 800px;
+    background:  url('../img/Asset\ 2clout.svg') no-repeat 100% 101%,url('../img/IMG_20191223_155637\ \(1\).jpg') no-repeat;
     background-attachment: scroll, fixed;
     background-position: bottom right,0 0;
     background-size: auto, cover;
@@ -116,6 +131,11 @@ header .highlight, header .current a{
   margin-top: 11%;
   font-size: 55px;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+#showcase p{
+  font-weight:500;
 }
 
 #Identity h1{
@@ -132,9 +152,10 @@ header .highlight, header .current a{
    
    
    padding:15px;
-   min-height: 750px;
+   min-height: 550px;
    background-color: #ffffff;
    color: #ffffff;
+  
 
 }
 
@@ -184,18 +205,47 @@ header .highlight, header .current a{
 
 #boxes{
   min-height: 400px;
-  margin:0px;
-  text-align: center;
-  padding:0px;
+  
+  
   background: linear-gradient(+90deg, #e9defa 0%, #fbfcdb 100%);
+  flex:1
 }
 
+
+
 .project1{
+  display:inline-block;
   background: url('../img/pics2-4143227.jpg') no-repeat 0 0;
   background-size: cover;
   color: #fff;
+  
+  
+  flex:1;
+}
+
+.collapsible{
+  background-color: #FFFFFF00;
+  color: #FFF;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
   backdrop-filter: brightness(70%);
-  flex:1
+}
+
+
+.active, .collapsible:hover {
+  backdrop-filter: brightness(90%);
+  color: #fff;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  backdrop-filter: brightness(90%);
 }
 .project2{
   background-image: url(../img/P7180525.JPG);
@@ -232,19 +282,81 @@ header .highlight, header .current a{
 
 
 
+
+
 #Vision p{
     margin-top: 20px;
     padding: 15px;
 }
 
+#Vision .container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  max-height: 800px;
+  
+}
+#Vision .text{
+  flex:1;
+  min-width: 50%;
+}
+#Vision .picture{
+  flex:1;
+  
+}
+.picture img{
+  width: 100%;
+}
+#Vision p{
+  margin-top: 0px;
+  padding: 15px;
+  font-size: auto;
+  
+}
+
+#Vision h1{
+ 
+  float: right;
+}
+
+#Identity2 .container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  max-height: 800px;
+  
+}
+#Identity2 .text{
+  flex:1;
+  min-width: 50%;
+}
+#Identity2 .picture{
+  flex:1;
+  
+}
+.picture img{
+  width: 100%;
+}
 #Identity2 p{
-    margin-top: 20px;
-    padding: 15px;
+  margin-top: 0px;
+  padding: 15px;
+  font-size: auto;
 }
 
 #Skills p{
     margin-top: 20px;
     padding: 15px;
+}
+
+
+#Past{
+  background: linear-gradient(+90deg, #e9defa 0%, #fbfcdb 100%);
+  
+
+  background: url('../img/Asset\ 9clout3.svg') no-repeat 0% 0%
+}
+#Past h1{
+  
 }
 #Past p{
     margin-top: 20px;
@@ -256,12 +368,24 @@ header .highlight, header .current a{
   padding: 15px;
 
 }
+#Future h1{
+  
+}
+
+#Future{
+  background:  url('../img/Asset\ 2clout.svg') no-repeat 100% 101%
+}
+#Present{
+ 
+}
 #Present p{
   margin-top: 20px;
   padding: 15px;
 
 }
-
+#Present h1{
+  
+}
 
 footer{
       padding:20px;
