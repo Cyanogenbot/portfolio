@@ -1,7 +1,11 @@
+
 * {
   border: 1px dashed red
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body{
     font-family: Quicksand, sans-serif;
     font-size: large;
@@ -22,8 +26,14 @@ body{
 }
 
 
-
-
+.anchor a {
+  position: absolute;
+  left: 0px;
+  top: -125px;
+}
+.anchor{
+  position: relative;
+}
 
 .button_1{
     height: 28px;
@@ -35,15 +45,12 @@ body{
     font-family: quicksand;
 }
 
-ul{
-    margin: 0;
-    padding:0;
-}
+
 
 h1{
-  font-size:40px;
+  font-size:35px;
   margin:15px;
-  padding:15px;
+  padding:0px;
 }
 
 p{
@@ -63,12 +70,14 @@ header{
     color:#000000;
     padding-top: 30px;
     min-height: 70px;
+    
     border-bottom: #35424a 3px solid;
-   
-    padding: 20px;
+    z-index: 1;
+    padding: 10px;
     display: flex;
     align-items: baseline;
     opacity:1;
+    
 }
 
 .sticky{
@@ -80,22 +89,30 @@ header{
 header a{
     color:#000000;
     text-decoration: none;
+    font-size: 10px;
     
-    font-size: 20px;
+    
+
+}
+
+header h1{
+  font-size: 30px;
+  
+  
 
 }
 
 
 
 header li{
-    float:left;
-    display:inline;
-    padding: 0 20px 0 20px;
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
 }
 
 header #logo{
     float:left;
-
+  
 }
 
 header #logo h1{
@@ -108,7 +125,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-    
+   
     background: linear-gradient(to left, #37ecba 0%, #72afd3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -117,32 +134,73 @@ header .highlight, header .current a{
 
 
 #showcase{
-    min-height: 800px;
-    background:  url('../img/Asset\ 2clout.svg') no-repeat 100% 101%,url('../img/IMG_20191223_155637\ \(1\).jpg') no-repeat;
+    min-height:  750px;
+    
+    background:  url('../img/Asset\ 2clout.svg') no-repeat 100% 101%,url('../img/IMG_20191223_155637\ \(1\).jpg') no-repeat 0 0;
     background-attachment: scroll, fixed;
-    background-position: bottom right,0 0;
-    background-size: auto, cover;
+    background-position: bottom right,50% 50%;
+    background-size: auto,cover;
     text-align: center;
     
+  
    
 }
+@media screen and (max-height: 670px) {
+  #showcase h1{
+    margin-top: 5%;
+    font-size: 50px;
+    margin-bottom: 28px;
+    text-align: center;
+    color: #000;
+    text-shadow: 0px 0 black, 0 2px black,
 
-#showcase h1{
-  margin-top: 11%;
-  font-size: 55px;
-  margin-bottom: 10px;
-  text-align: center;
+    }
+    
 }
+#showcase h1{
+  margin-top: 5%;
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: #FFFFFF00;
+  opacity:1;
+  z-index: 0;
+  
+}
+@media screen and (max-height: 740px) {
+  #showcase p{
+    font-weight:500;
+    color: #fff;
+    
+    
+    
+
+  }
+  #showcase h1{
+    margin-top: 5%;
+    font-size: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    background: #FFFFFF00;
+    opacity:1;
+    z-index: 0;
+    
+  }
+}
+
+
+
 
 #showcase p{
   font-weight:500;
+  margin-top: 0px;
 }
 
 #Identity h1{
   float:right;
-  font-size:3px;
+  font-size:30px;
   margin-top: 35px;
-  font-size: 55px;
+  
 }
 
 #Identity{
@@ -204,9 +262,7 @@ header .highlight, header .current a{
 
 
 #boxes{
-  min-height: 400px;
-  
-  
+  min-height: 250px;
   background: linear-gradient(+90deg, #e9defa 0%, #fbfcdb 100%);
   flex:1
 }
@@ -244,8 +300,9 @@ header .highlight, header .current a{
 .content {
   padding: 0 18px;
   display: none;
-  overflow: hidden;
+  overflow:none;
   backdrop-filter: brightness(90%);
+  min-height: 750px;
 }
 .project2{
   background-image: url(../img/P7180525.JPG);
@@ -265,7 +322,7 @@ header .highlight, header .current a{
   text-align: center;
   padding:0px;
   width:100%;
-  height: 400px;
+  min-height: 400px;
   
   
 }
@@ -281,7 +338,9 @@ header .highlight, header .current a{
 }
 
 
-
+#Vision{
+  position: relative;
+}
 
 
 #Vision p{
@@ -293,12 +352,12 @@ header .highlight, header .current a{
   margin-top: 20px;
   display: flex;
   flex-direction: row-reverse;
-  max-height: 800px;
+  min-height: 300px;
   
 }
 #Vision .text{
   flex:1;
-  min-width: 50%;
+  min-width: 75%;
 }
 #Vision .picture{
   flex:1;
@@ -318,27 +377,33 @@ header .highlight, header .current a{
  
   float: right;
 }
-
+#Identity2{
+  position: relative;
+  
+}
 #Identity2 .container {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  max-height: 800px;
+  min-height: 300px;
   
 }
 #Identity2 .text{
   flex:1;
-  min-width: 50%;
+  min-width: 75%;
 }
 #Identity2 .picture{
+  
   flex:1;
   
 }
+
+
+
 .picture img{
   width: 100%;
 }
 #Identity2 p{
-  margin-top: 0px;
   padding: 15px;
   font-size: auto;
 }
@@ -433,6 +498,7 @@ footer{
   /* Button styling */
   .menu-toggle {
     display: inline-block;
+    margin: auto;
     padding: .75em 15px;
     line-height: 1em;
     font-size: 1em;
@@ -464,7 +530,8 @@ footer{
   
   .main-menu ul {
     list-style: none;
-    margin: 0;
+    margin:0;
+    margin-top: 10px;
     padding: 2.5em 0 0;
     /* Hide shadow w/ -8px while 'closed' */
     -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
@@ -473,6 +540,7 @@ footer{
     min-height: 100%;
     width: 200px;
     background: #1a1a1a;
+    flex:3;
   }
   
   .main-menu a {
