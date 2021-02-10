@@ -7,10 +7,12 @@
     <meta name="description" content="Diede van Marle's portfolio">
     <meta name="author" content="Diede van Marle">
     <title>Designed by Diede</title>
+    <link rel='stylesheet' href="./css/reset.css">
     <link rel='stylesheet' href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a706565bf3.js" crossorigin="anonymous"></script>
+    <script src="javabalk.js"></script>
 
 
 
@@ -24,14 +26,13 @@
             <div class="containerTitle">
                 <h1 id="headerlogo">Designed by</h1>
                 <h1 id="highlight">Diede</h1>
-
             </div>
-            <div class="gradient" id="list">
-                <ul class="topbuttons">
-                    <li class="current"><a href="index.html">Gallery</a></li>
-                    <li><a href="#ident">Identity</a></li>
-                    <li><a href="#present">Vision</a></li>
-                    <li><a href="#skills">Skills</a></li>
+            <div id="list">
+                <ul class="topbuttons" id="Gradient">
+                    <li class="current"><a href="index.html" class="gradientChange">Gallery</a></li>
+                    <li><a href="#ident " class="gradientChange">Identity</a></li>
+                    <li><a href="#present " class="gradientChange">Vision</a></li>
+                    <li><a href="#skills " class="gradientChange">Skills</a></li>
                 </ul>
             </div>
         </div>
@@ -41,85 +42,83 @@
 
         <div class="container">
             <h1>Welcome to Diede's portfolio</h1>
-            <p>This site is where I showcase my Identity, Vision, Skills and Projects</p>
+            <!-- <p>This site is where I showcase my Identity, Vision, Skills and Projects</p> -->
         </div>
 
     </section>
 
     <section id="Identity">
         <div class="bg1">
-
         </div>
         <div class="bg2">
-
         </div>
         <div class="container">
 
 
             <form>
-                <input type="name" placeholder="Who are you?">
-                <button type="submit" class="button_1">is who I am</button>
+                <input type="name " placeholder="Who are you? ">
+                <button type="submit " class="button_1 ">is who I am</button>
             </form>
             <H1>This is me</H1>
         </div>
     </section>
 
-    <section id="boxes">
+    <section id="boxes ">
         <h1>My projects</h1>
-        <div class="container">
+        <div class="container ">
 
-            <div class="project1">
+            <div class="project1 ">
 
-                <button type="button" class="collapsible">
+                <button type="button " class="collapsible ">
           <h3>Creative technology</h3>
           <p>An iot powered dog feeder</p>
         </button>
-                <div class="content">
+                <div class="content ">
                     <p>Lorem ipsum...</p>
                 </div>
             </div>
-            <div class="project2">
-                <button type="button" class="collapsible">
+            <div class="project2 ">
+                <button type="button " class="collapsible ">
           <h3>Project 2</h3>
           <p>This is what i did for project 2</p>
         </button>
-                <div class="content">
+                <div class="content ">
                     <p>Lorem ipsum...</p>
                 </div>
             </div>
-            <div class="project3">
-                <button type="button" class="collapsible">
+            <div class="project3 ">
+                <button type="button " class="collapsible ">
           <h3>Project 3</h3>
           <p>This is what i did for project 3</p>
         </button>
-                <div class="content">
+                <div class="content ">
                     <p>Lorem ipsum...</p>
 
                 </div>
             </div>
     </section>
     <script>
-        var coll = document.getElementsByClassName("collapsible");
+        var coll = document.getElementsByClassName("collapsible ");
         var i;
 
         for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
+            coll[i].addEventListener("click ", function() {
+                this.classList.toggle("active ");
                 var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
+                if (content.style.display === "block ") {
+                    content.style.display = "none ";
                 } else {
-                    content.style.display = "block";
+                    content.style.display = "block ";
                 }
             });
         }
     </script>
-    <section id="Identity2">
-        <div class="anchor">
-            <a name="ident"></a>
+    <section id="Identity2 ">
+        <div class="anchor ">
+            <a name="ident "></a>
             <H1>My identity</H1>
-            <div class="container">
-                <div class="text">
+            <div class="container ">
+                <div class="text ">
                     <p>I’m a student who likes to work on projects where I start from scratch and build something up. In the process I like to learn new things and work towards a final goal. For example, soldering, 3d modeling and laser cutting. In these
                         projects I like to involve technologies I think are interesting and relevant to the plan. This way I both explore the technologies and see their capabilities, while creating something that looks both nice and is practical. Another
                         way I do this is by trying to fix broken objects of mine myself, for example lenses. </p>
@@ -131,18 +130,18 @@
                         can both be a blessing or a curse for the group as I do help them progress a lot and stay on the topic but I can be quite suborn about this, this shouldn’t be bad however because I feel that’s also part of the design progress.
                         In case I feel like I’m being too stubborn I take no problem in loosening up and keep the group vibe positive.</p>
                 </div>
-                <div class="picture">
-                    <img src="./img/P7180525.JPG">
+                <div class="picture ">
+                    <img src="./img/P7180525.JPG ">
                 </div>
             </div>
         </div>
     </section>
-    <section id="Vision">
-        <div class="anchor">
-            <a name="visio"></a>
+    <section id="Vision ">
+        <div class="anchor ">
+            <a name="visio "></a>
             <H1>My vision</H1>
-            <div class="container">
-                <div class="text">
+            <div class="container ">
+                <div class="text ">
 
                     <p> I’m personally very interested in the intersection between technologies and design. I think design can give a lot of purpose to upcoming technologies. Usually new technologies and mechanics tend to be very rough and not user friendly,
                         that’s why I think a design can make or break a product. A designer should be able to make the product more accessible by trying to make it more user-friendly and give it a bit of flair. I’d like to develop a personal design language
@@ -155,16 +154,16 @@
                         keeps them calm and eases the use of the product or interface. At last I think my designs should bring emotions to the user so that they can bond to the object. Their purchase should be one of those, I’m very glad I bought this,
                         purchases. I want to achieve this in an ethical way as these products shouldn’t take advantage of the user’s trust.</p>
                 </div>
-                <div class="picture">
-                    <img src="./img/P7180525.JPG">
+                <div class="picture ">
+                    <img src="./img/P7180525.JPG ">
                 </div>
             </div>
         </div>
     </section>
-    <section id="Past">
-        <div class="anchor">
-            <a name="present"></a>
-            <div class="container">
+    <section id="Past ">
+        <div class="anchor ">
+            <a name="present "></a>
+            <div class="container ">
                 <H1>Past</H1>
                 <p>I’ve always been intrigued by design and aesthetics rather than auditory stimuli and have primarily focused on those. I’ve spent countless hours mastering adobe software and expressing myself through this medium. My background is technological
                     as this is a subject I’m very interested in and I am willing to spend a lot of time figuring stuff out. I’ve thought about design for a big part of my life as its always been a part of me growing up in Eindhoven. I’ve also thought
@@ -173,8 +172,8 @@
             </div>
         </div>
     </section>
-    <section id="Present">
-        <div class="container">
+    <section id="Present ">
+        <div class="container ">
             <H1>Present</H1>
             <p>Currently I’m in a big transition where I’m getting more urges to create physical products and spend more time working on the technology and realization of products, for this reason I picked my elective digital craftsmanship this quartile.
                 I’ve started to do more personal building projects. Where I for example made myself a keyboard that I designed, and laser cut out of acrylic myself. Another example is my mini project for my course creative electronics where I made a dogfood
@@ -184,8 +183,8 @@
         </div>
 
     </section>
-    <section id="Future">
-        <div class="container">
+    <section id="Future ">
+        <div class="container ">
             <H1>Future</H1>
             <p>Another field I want to build upon in the future is that of business and entrepreneurship. I feel like I’m still very inexperienced in this field and this is something I think I should improve upon; I currently haven’t picked any courses in
                 this expertise area yet but I’m planning to do that next year. I’ve been delaying this as I first wanted to more insight on the design process which I have gotten now. I want to use the knowledge of business and entrepreneur ship to investigate
@@ -195,10 +194,10 @@
     </section>
 
 
-    <section id="Skills">
-        <div class="anchor">
-            <a name="skills"></a>
-            <div class="container">
+    <section id="Skills ">
+        <div class="anchor ">
+            <a name="skills "></a>
+            <div class="container ">
                 <H1>My skills</H1>
                 <p></p>
             </div>
