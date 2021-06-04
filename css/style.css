@@ -1,9 +1,10 @@
-    * {
+    /* * {
         border: 1px dashed red
     }
+     */
     
     body {
-        min-height: 90%;
+        min-height: 100%;
         min-width: 100%;
         display: flex;
         flex-direction: column;
@@ -16,7 +17,6 @@
     }
     
     header {
-        margin-top: 0.7%;
         display: flex;
         justify-content: center;
         /* border: 1px dashed green; */
@@ -24,28 +24,29 @@
     }
     
     .headercont {
+        padding: 1%;
+        margin: 1%;
         position: fixed;
-        height: 7vh;
-        width: 96vw;
-        border-radius: 0.75vh;
+        /* min-height: 6vh; */
+        width: 94vw;
+        border-radius: 2vw;
         background-color: rgb(255, 255, 255);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     
     .containerTitle {
         flex: 1;
-        margin-left: 1%;
+        height: fit-content;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: row;
-        justify-content: left;
     }
     
     #list {
         flex: 0.6;
         min-height: 100%;
-        border-radius: 0.75vh;
+        border-radius: 2vw;
         display: flex;
         background: rgb(254, 36, 53);
         background: linear-gradient(90deg, rgba(254, 36, 53, 1) 0%, rgba(255, 0, 96, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
@@ -104,11 +105,18 @@
     #showcase {
         height: 100vh;
         display: flex;
-        margin-top: 5%;
     }
     
     #showcase h1 {
-        height: 40vh;
+        font-size: 6vw;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        color: white;
+        text-align: left;
+        margin-left: 1%;
+    }
+    
+    #showcase h2 {
         font-size: 6vw;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
@@ -123,11 +131,9 @@
         background-attachment: fixed;
         background-position: 50% 50%;
         background-size: cover;
-        background-image: blur(5px)
     }
     
     #rectangle {
-        height: 40VH;
         width: 200%;
         background: url('../img/Artboard 1picturebackground.jpg') no-repeat 0 0;
         background-attachment: fixed;
@@ -136,15 +142,25 @@
     }
     
     #rectangle h1 {
-        height: 40vh;
-        width: 200%;
-        font-size: 10vw;
+        font-size: 9vw;
         color: Black;
         mix-blend-mode: screen;
         background-color: rgb(255, 255, 255);
         text-align: left;
         margin: 0;
         font-weight: 600;
+        backdrop-filter: blur(8px);
+    }
+    
+    #rectangle h2 {
+        font-size: 7vw;
+        color: Black;
+        mix-blend-mode: screen;
+        background-color: rgb(255, 255, 255);
+        text-align: left;
+        margin: 0;
+        font-weight: 600;
+        backdrop-filter: blur(8px);
     }
     
     .containerBigText {
@@ -152,9 +168,12 @@
         display: flex;
         flex-direction: column;
         width: 200%;
-        backdrop-filter: blur(8px);
     }
     
     .Identity {
         height: 100%;
+    }
+    
+    #empty {
+        height: 65vh;
     }
