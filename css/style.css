@@ -1,7 +1,7 @@
-    /* * {
+    * {
         border: 1px dashed red
     }
-     */
+    
     
     body {
         min-height: 100%;
@@ -10,46 +10,115 @@
         flex-direction: column;
         text-align: center;
         overflow-x: hidden;
+        background-color:#004058;
+        scroll-behavior: smooth;
+        /* scroll-snap-type: y mandatory; */
+        
     }
     
+    /* .child {
+        scroll-snap-align: start;
+    } */
+
     html {
         scroll-behavior: smooth;
     }
     
+    ::-webkit-scrollbar{
+        width: 1em;
+        display: none;
+        
+    }
+    body::-webkit-scrollbar-thumb {
+        background: linear-gradient( rgba(254, 36, 53, 1) 0%, #ff0060 100%);
+
+        border-radius: .5em;
+        /* outline: 1px solid slategrey; */
+    }
+  
+    
     header {
-        display: flex;
-        justify-content: center;
+        justify-content: right;
+        float: center;
         /* border: 1px dashed green; */
         z-index: 1;
-    }
-    
-    .headercont {
-        padding: 1%;
         margin: 1%;
         position: fixed;
-        /* min-height: 6vh; */
-        width: 94vw;
-        border-radius: 2vw;
-        background-color: rgb(255, 255, 255);
+        width: 45vw;
+        
+    }
+
+    .fa {
+
+        font-size: 1.6vw;
+        justify-content: flex-end;
+        padding: 1%;
+        text-decoration: none;
+        color: #fe2435;   
+        
+    }
+
+    .headercont {
+        justify-content: left;
+        padding: 3%;
         display: flex;
         flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        border-radius: 2vw;
+        height: auto;
+        /* align-items: center; */
+        
     }
     
-    .containerTitle {
+    .containerInfo {
+        height: 100%;
         flex: 1;
-        height: fit-content;
         display: flex;
-        align-items: flex-start;
         flex-direction: row;
+        align-items: center;
+        /* margin-bottom: 3%; */
+        /* max-width: 45%; */
+     
     }
+    .containerText {
+        height: 3vh;
+        flex: 1;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding-left: 1%;
+    }
+
+
+
+    #headerlogo {
+        font-weight: 300;
+        width: fit-content;
+    }
+    
+    #highlight {
+        font-weight: 600;
+        margin-left: 0.25em;
+    }
+
+
+    
+    .containerInfo h1 {
+        justify-content: flex-start;
+        font-size: 2vw;
+        font-family: 'Rubik', sans-serif;
+    }
+    
     
     #list {
+        
         flex: 0.6;
-        min-height: 100%;
+        height: 4vh;
         border-radius: 2vw;
         display: flex;
         background: rgb(254, 36, 53);
         background: linear-gradient(90deg, rgba(254, 36, 53, 1) 0%, rgba(255, 0, 96, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        align-items: center;
     }
     
     .topbuttons {
@@ -63,13 +132,18 @@
     
     li {
         width: 20%;
+        height: 100%;
         margin: auto;
         list-style: none;
         display: flex;
         justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        
     }
     
     #Gradient {
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -86,28 +160,14 @@
         -webkit-text-fill-color: transparent;
     }
     
-    #headerlogo {
-        font-weight: 300;
-        width: fit-content;
-    }
-    
-    #highlight {
-        font-weight: 600;
-        margin-left: 0.25em;
-        width: fit-content;
-    }
-    
-    .containerTitle h1 {
-        font-size: 2vw;
-        font-family: 'Rubik', sans-serif;
-    }
-    
+
     #showcase {
         height: 100vh;
         display: flex;
     }
     
     #showcase h1 {
+        
         font-size: 6vw;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
