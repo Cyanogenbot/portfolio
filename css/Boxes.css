@@ -1,0 +1,58 @@
+#boxes {
+
+    justify-content: center;
+    
+}
+
+.boxesContain {
+    padding: 3%;
+    border-radius: 50px;
+    background-color: lavender;
+    height: 65vh;
+    align-items: center;
+    /* min-height: 40%; */
+
+    
+}
+
+.boxesContent {
+    
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    /* min-height: 40%; */
+    align-items: center;
+    
+}
+
+.project1 {
+    display: inline-block;
+    background: url('../img/pics2-4143227.jpg') no-repeat 0 0;
+    background-size: cover;
+    color: #fff;
+    flex: 1;
+    height: 100%;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    
+
+    
+ 
+}
+
+.project2 {
+    background-image: url(../img/P7180525.JPG);
+    flex: 1;
+    height: 100%;
+    
+}
+
+.project3 {
+    background-image: url(../img/P7180525.JPG);
+    flex: 1;
+    height: 100%;
+    
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+}

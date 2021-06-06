@@ -9,24 +9,31 @@
     <title>Designed by Diede</title>
     <link rel='stylesheet' href="./css/reset.css">
     <link rel='stylesheet' href="./css/style.css">
+    <link rel='stylesheet' href="./css/Boxes.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a706565bf3.js" crossorigin="anonymous"></script>
     <script src="javabalk.js"></script>
 
-    
+    <meta name="theme-color" content="#ff0060" />
 
 
 </head>
 
 <body>
-    
     <header>
         <div class="headercont">
-            <div class="containerTitle">
-                <h1 id="headerlogo">Designed by</h1>
-                <h1 id="highlight">Diede</h1>
+            <div class="containerInfo">
+                <div class="containerText">
+                    <h1 id="headerlogo">Designed by</h1>
+                    <h1 id="highlight">Diede</h1>
+                </div>
+                <a href="https://www.linkedin.com/in/diede-van-marle-945394196/" class="fa fa-linkedin" style="vertical-align: middle;"></a>
+                <a href="#" class="fa fa-instagram" style="vertical-align: middle;"></a>
+                <a href="https://t.me/Cyanidebadjur" class="fa fa-telegram" style="vertical-align: middle;"></a>
+                <a href="mailto: d.v.marle@student.tue.nl" class="fa fa-envelope-open-text" style="vertical-align: middle;"></a>
             </div>
+            
             <div id="list">
                 <ul class="topbuttons" id="Gradient">
                     <li class="current"><a href="index.html" class="gradientChange">Gallery</a></li>
@@ -38,16 +45,66 @@
         </div>
     </header>
 
-    <section id="showcase">
+    <section class="child" id="showcase">
+        <div class="Achtergrond1">
+            <div id="empty"></div>
+            <div class="containerBigText">
 
-        <div class="container">
-            <h1>Welcome to Diede's portfolio</h1>
-            <!-- <p>This site is where I showcase my Identity, Vision, Skills and Projects</p> -->
+
+                <div id="rectangle">
+                    <!-- <div id="rectangle2"></div>
+                    <h1>Diede van Marle</h1>
+                    <h2>portfolio</h2> -->
+                </div>
+                <!-- <p>This site is where I showcase my Identity, Vision, Skills and Projects</p> -->
+            </div>
+        </div>
+
         </div>
 
     </section>
 
-    <section id="Identity">
+    <section class="child" id="boxes ">
+        <!-- <h1>My projects</h1> -->
+        <div class="boxesContain">
+            <div class="boxesContent">
+
+                <div class="project1 ">
+
+                    <button type="button " class="collapsible ">
+                        <h3>Creative technology</h3>
+                        <p>An iot powered dog feeder</p>
+                    </button>
+                    <div class="content ">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                </div>
+
+                <div class="project2 ">
+                    <button type="button " class="collapsible ">
+                        <h3>Project 2</h3>
+                        <p>This is what i did for project 2</p>
+                    </button>
+                    <div class="content ">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                </div>
+
+                <div class="project3 ">
+                    <button type="button " class="collapsible ">
+                        <h3>Project 3</h3>
+                        <p>This is what i did for project 3</p>
+                    </button>
+                    <div class="content ">
+                        <p>Lorem ipsum...</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="child" id="Identity">
         <div class="bg1">
         </div>
         <div class="bg2">
@@ -63,40 +120,7 @@
         </div>
     </section>
 
-    <section id="boxes ">
-        <h1>My projects</h1>
-        <div class="container ">
 
-            <div class="project1 ">
-
-                <button type="button " class="collapsible ">
-          <h3>Creative technology</h3>
-          <p>An iot powered dog feeder</p>
-        </button>
-                <div class="content ">
-                    <p>Lorem ipsum...</p>
-                </div>
-            </div>
-            <div class="project2 ">
-                <button type="button " class="collapsible ">
-          <h3>Project 2</h3>
-          <p>This is what i did for project 2</p>
-        </button>
-                <div class="content ">
-                    <p>Lorem ipsum...</p>
-                </div>
-            </div>
-            <div class="project3 ">
-                <button type="button " class="collapsible ">
-          <h3>Project 3</h3>
-          <p>This is what i did for project 3</p>
-        </button>
-                <div class="content ">
-                    <p>Lorem ipsum...</p>
-
-                </div>
-            </div>
-    </section>
     <script>
         var coll = document.getElementsByClassName("collapsible ");
         var i;
