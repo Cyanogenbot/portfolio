@@ -1,14 +1,33 @@
 #boxes {
-
+ 
     justify-content: center;
     
 }
 
+.title{
+    margin: 1%;
+    margin-bottom: 0;
+    border-top-right-radius: 50px;
+    font-size: 6vh;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: white;
+    background-color: #212121;
+    /* width: max-content; */
+   
+   padding: 3%;
+   padding-bottom: 4%;
+}
+
 .boxesContain {
+    margin: 1%;
+    margin-top: 0%;
     padding: 3%;
     border-radius: 50px;
+    border-top-right-radius: 0vw;
     background-color: lavender;
-    height: 65vh;
+    height: 60vh;
     align-items: center;
     /* min-height: 40%; */
 
